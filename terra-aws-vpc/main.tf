@@ -1,4 +1,9 @@
 
+variable "region" {
+}
+variable "cluster_name" {
+}
+
 locals {
   project = "terraform-vpc"
 }

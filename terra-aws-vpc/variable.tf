@@ -3,7 +3,7 @@ variable "region" {
   description = "Region workspace"
 
   validation {
-    condition     = contains(["us-east-1", "us-east-2"], var.instance_type)
+    condition     = contains(["us-east-1", "us-east-2"], var.region)
     error_message = "Value not allow."
   }
 }

@@ -1,9 +1,9 @@
-variable "instance_type" {
+variable "region" {
   type        = string
-  description = "Instance type of the EC2"
+  description = "Region workspace"
 
   validation {
-    condition     = contains(["t2.micro", "t3.small"], var.instance_type)
+    condition     = contains(["us-east-1", "us-east-2"], var.instance_type)
     error_message = "Value not allow."
   }
 }
